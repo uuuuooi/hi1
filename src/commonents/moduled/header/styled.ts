@@ -16,6 +16,9 @@ const Header = styled.header`
   padding: 8px 48px;
   transition-timing-function: ease-in;
   transition: all 1s;
+  &.active {
+    background-color: white;
+  }
 `;
 
 const Logo = styled.h1`
@@ -36,6 +39,9 @@ const NavLi = styled.li`
   width: 190px;
   font-size: 18px;
   color: white;
+  &.active {
+    color: black;
+  }
 `;
 
 const Translation = styled.div`

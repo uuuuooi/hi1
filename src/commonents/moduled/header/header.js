@@ -7,23 +7,24 @@
 */
 import * as M from "./styled";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { css } from "@emotion/css";
 
 const Header = () => {
-  const [show, handleShow] = useState(false);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
-        handleShow(true);
-      } else handleShow(false);
+        setShow(true);
+      } else setShow(false);
     });
     return () => {
-      // window.removeEventListener("scroll", null);
+      window.removeEventListener("scroll", null);
     };
   }, []);
   return (
-    <M.Header>
+    <M.Header className={`${show && "active"}`}>
       <M.Logo>
         <picture>
           <img src="./images/logo.png" alt="HIONE" />
@@ -31,19 +32,19 @@ const Header = () => {
       </M.Logo>
       <M.Nav>
         <M.NavUl>
-          <M.NavLi>
+          <M.NavLi className={`${show && "active"}`}>
             <a href="http://www.hi1plus.com/company">Brand</a>
           </M.NavLi>
-          <M.NavLi>
+          <M.NavLi className={`${show && "active"}`}>
             <a href="http://www.hi1plus.com/products">제품정보</a>
           </M.NavLi>
-          <M.NavLi>
+          <M.NavLi className={`${show && "active"}`}>
             <a href="http://www.hi1plus.com/community">고객지원</a>
           </M.NavLi>
-          <M.NavLi>
+          <M.NavLi className={`${show && "active"}`}>
             <a href="http://www.hi1plus.com/business">사업 소개</a>
           </M.NavLi>
-          <M.NavLi>
+          <M.NavLi className={`${show && "active"}`}>
             <a href="http://www.hi1plus.com/pr-center">홍보센터</a>
           </M.NavLi>
         </M.NavUl>
