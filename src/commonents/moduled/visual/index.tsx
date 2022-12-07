@@ -30,7 +30,7 @@ const Visual = () => {
               <V.Num>01</V.Num>
               <V.Num>02</V.Num>
               <V.Num>03</V.Num>
-              <V.Num>04</V.Num>
+              <V.Num4>04</V.Num4>
             </V.Nums>
           </V.TextWrap>
         </Inner>
