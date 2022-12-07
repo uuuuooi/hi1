@@ -30,9 +30,9 @@ const Product = () => {
               </P.Content>
               <P.Button>자세히보기</P.Button>
               <P.Nums>
-                <P.Num>1</P.Num>
-                <P.Num>2</P.Num>
-                <P.Num>3</P.Num>
+                <P.Num>01</P.Num>
+                <P.Num>02</P.Num>
+                <P.Num3>03</P.Num3>
               </P.Nums>
             </P.Figcaption>
           </figure>

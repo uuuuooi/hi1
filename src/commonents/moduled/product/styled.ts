@@ -51,6 +51,10 @@ const Nums = styled.div`
 `;
 
 const Num = styled.span`
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 15px;
+`;
+const Num3 = styled.span`
   color: white;
 `;
 export {
@@ -63,4 +67,5 @@ export {
   Button,
   Nums,
   Num,
+  Num3,
 };

@@ -4,17 +4,31 @@
     author : EUNHYE KIM
     start date : 12/6/2022
   ==============================================================================
-*/ import React from "react";
+*/
 import * as M from "./styled";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
   return (
     <M.Header>
-      <h1>
+      <M.Logo>
         <picture>
           <img src="./images/logo.png" alt="HIONE" />
         </picture>
-      </h1>
+      </M.Logo>
       <M.Nav>
         <M.NavUl>
           <M.NavLi>
@@ -35,9 +49,13 @@ const Header = () => {
         </M.NavUl>
       </M.Nav>
       <M.Translation>
-        <button>
+        <M.Button>
           <span>KOR</span>
-        </button>
+          <hr />
+        </M.Button>
+        <M.Icon>
+          <GiHamburgerMenu />
+        </M.Icon>
       </M.Translation>
       <div>
         <span></span>
