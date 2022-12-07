@@ -4,11 +4,12 @@
     author : EUNHYE KIM
     start date : 12/5/2022
   ==============================================================================
-*/ import React from "react";
-import Main from "./main";
+*/
+import React from "react";
+import Index from "../../src/commonents/templates/main";
 
-const index = () => {
-  return <Main />;
+const Main = () => {
+  return <Index />;
 };
 
-export default index;
+export default Main;
