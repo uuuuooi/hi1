@@ -23,7 +23,9 @@ const Map = () => {
         </M.Picture>
       </M.Article>
       <M.ArticleMap>
-        <M.Map>map</M.Map>
+        <picture>
+          <M.Img src="./images/img_google_map.png" alt="map" />
+        </picture>
       </M.ArticleMap>
     </section>
   );

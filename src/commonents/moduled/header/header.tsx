@@ -19,7 +19,7 @@ const Header = () => {
       } else handleShow(false);
     });
     return () => {
-      window.removeEventListener("scroll");
+      // window.removeEventListener("scroll", null);
     };
   }, []);
   return (

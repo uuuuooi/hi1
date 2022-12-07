@@ -35,10 +35,11 @@ const ArticleMap = styled.article`
   padding: 0px 0px 110px 0px;
 `;
 
-const Map = styled.div`
+const Img = styled.img`
   width: 1280px;
   height: 470px;
-  border: 3px solid black;
+  object-fit: cover;
+  filter: brightness(50%);
 `;
 
-export { Article, Title, Map, View, Picture, Button, ArticleMap };
+export { Article, Title, View, Picture, Button, ArticleMap, Img };
