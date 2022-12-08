@@ -14,11 +14,16 @@ const Product = () => {
   return (
     <VisualInner>
       <P.Section>
-        <article>
+        <div>
           <MainTitle>Products</MainTitle>
           <figure>
             <P.Picture>
-              <img src="./images/img_bg_product.png" alt="bgi"></img>
+              <img
+                src="./images/img_bg_product.webp"
+                alt="bgi"
+                width={1280}
+                height={500}
+              />
             </P.Picture>
             <P.Figcaption>
               <P.MiniTitle>Push-Pull</P.MiniTitle>
@@ -36,7 +41,7 @@ const Product = () => {
               </P.Nums>
             </P.Figcaption>
           </figure>
-        </article>
+        </div>
       </P.Section>
       <ProductItem />
     </VisualInner>

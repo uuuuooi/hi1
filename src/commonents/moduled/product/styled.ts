@@ -6,7 +6,7 @@
   ==============================================================================
 */ import styled from "@emotion/styled";
 
-const Section = styled.section`
+const Section = styled.article`
   display: flex;
   align-items: center;
   justify-content: center;

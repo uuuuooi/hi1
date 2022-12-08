@@ -15,7 +15,7 @@ import Map from "../../moduled/map";
 import Footer from "../../moduled/footer/index";
 import styled from "@emotion/styled";
 
-const Wrap = styled.div`
+const Wrap = styled.section`
   background-color: #f6f6f6;
   margin: -34px 0px 0px 0px;
 `;

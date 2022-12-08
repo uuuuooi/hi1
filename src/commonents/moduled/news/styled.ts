@@ -1,9 +1,5 @@
 import styled from "@emotion/styled";
 
-const Section = styled.section`
-  /* position: relative; */
-`;
-
 const AarticleTitle = styled.article`
   /* position: absolute; */
 `;
@@ -25,6 +21,8 @@ const Button = styled.button`
 
 const Img = styled.img`
   margin: 0px 0px 0px 0px;
+  width: 312px;
+  height: 179px;
 `;
 
 const Article = styled.article`
@@ -55,18 +53,23 @@ const Figcaption = styled.figcaption`
 
 const BoxTitle = styled.p`
   font-size: 20px;
+  width: 260px;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 const BoxContent = styled.p`
   color: #666;
   font-size: 17px;
+  line-height: 140%;
 `;
 const BoxDay = styled.p`
   font-size: 12px;
   color: #666;
 `;
 export {
-  Section,
   AarticleTitle,
   View,
   Picture,

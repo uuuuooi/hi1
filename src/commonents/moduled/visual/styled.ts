@@ -24,8 +24,11 @@ const TextWrap = styled.div`
 
 const Img = styled.img`
   display: block;
+  width: 1250px;
   width: 100%;
   max-width: 100%;
+  height: 995px;
+  object-fit: cover;
 `;
 
 const SmallTitel = styled.p`
@@ -36,6 +39,7 @@ const SmallTitel = styled.p`
 `;
 const Title = styled.h2`
   font-size: 55px;
+  font-weight: bold;
 `;
 
 const Nums = styled.div`

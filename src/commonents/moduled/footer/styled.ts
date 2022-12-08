@@ -34,12 +34,13 @@ const Icon = styled.span`
 
 const Border = styled.span`
   border-left: thin solid #3d3d3d;
-
   height: 15px;
 `;
 const Aside = styled.aside`
   float: right;
-  margin-left: 500px;
+  display: block;
+  clear: both;
+  margin-left: 585px;
 `;
 
 const Button = styled.button`
@@ -80,9 +81,14 @@ const Aside2 = styled.aside`
 `;
 const Picture = styled.picture`
   float: right;
+  display: block;
+  clear: both;
   margin-top: -132px;
 `;
-const Img = styled.img``;
+const Img = styled.img`
+  width: 206px;
+  height: 30px;
+`;
 export {
   Ul,
   Footer,

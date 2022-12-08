@@ -4,16 +4,18 @@
     author : EUNHYE KIM
     start date : 12/6/2022
   ==============================================================================
-*/ import React from "react";
+*/
+
+import React from "react";
 import * as V from "../visual/styled";
 import * as N from "./styles";
+
 const Notic = () => {
-  // 여기 div 많음
   return (
     <section>
       <N.Article>
         <V.Picture>
-          <V.Img src="./images/img_bg_notic.jpeg" alt="bgi" />
+          <N.Img src="./images/img_bg_notic.webp" alt="bgi" />
           <N.TextWrap>
             <N.TextTitle> Home Manager</N.TextTitle>
             <N.TextContent>
@@ -26,9 +28,6 @@ const Notic = () => {
       </N.Article>
       <N.Article>
         <N.Ul>
-          <V.Picture>
-            <V.Img src="./images/img_bg_notic2.jpeg" alt="bgi" />
-          </V.Picture>
           <N.ContentWrap>
             <N.ContentTitle>Why HIONE+?</N.ContentTitle>
             <N.ContentData>
@@ -61,14 +60,14 @@ const Notic = () => {
                   누적 판매수량
                 </N.DataText>
               </N.Li>
-              <N.Li>
+              <N.Li5>
                 <N.Data>150</N.Data>
                 <N.DataText>
                   전국 150개 이상
                   <br />
                   서비스점 운영
                 </N.DataText>
-              </N.Li>
+              </N.Li5>
             </N.ContentData>
           </N.ContentWrap>
         </N.Ul>

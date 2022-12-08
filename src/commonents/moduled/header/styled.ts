@@ -11,11 +11,11 @@ const Header = styled.header`
   width: 100%;
   position: fixed;
   display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
   z-index: 9;
-  padding: 8px 48px;
-  transition-timing-function: ease-in;
-  transition: all 1s;
+  padding: 12px 120px 0px 0px;
   &.active {
     background-color: white;
   }
@@ -23,6 +23,10 @@ const Header = styled.header`
 
 const Logo = styled.h1`
   padding: 0px 55px;
+  &.active {
+    background-image: url("./images/ico_hover_logo.webp");
+    background-repeat: no-repeat;
+  }
 `;
 
 const Nav = styled.nav`
@@ -38,9 +42,11 @@ const NavLi = styled.li`
   padding: 11px 16px;
   width: 190px;
   font-size: 18px;
+  font-weight: 700;
   color: white;
+
   &.active {
-    color: black;
+    color: #131b39;
   }
 `;
 
@@ -53,11 +59,17 @@ const Button = styled.button`
   all: unset;
   color: white;
   font-size: 14px;
+  &.active {
+    color: #131b39;
+  }
 `;
 const Icon = styled.div`
   color: white;
   font-size: 30px;
   margin: 0px 0px 0px 60px;
+  &.active {
+    color: #131b39;
+  }
 `;
 
 export { Header, Logo, Nav, NavUl, NavLi, Translation, Button, Icon };

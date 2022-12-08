@@ -9,7 +9,7 @@ import * as M from "./styled";
 
 const Map = () => {
   return (
-    <section>
+    <>
       <M.Article>
         <M.Title>
           <strong>전국 100여개 연계 판매점</strong> 에서 하이원플러스 제품을
@@ -18,16 +18,21 @@ const Map = () => {
         <M.View>더보기</M.View>
         <M.Picture>
           <M.Button>
-            <img src="./images/ico_main_viewmore.png" alt="ico" />
+            <img
+              src="./images/ico_main_viewmore.webp"
+              alt="ico"
+              width={34}
+              height={34}
+            />
           </M.Button>
         </M.Picture>
       </M.Article>
       <M.ArticleMap>
         <picture>
-          <M.Img src="./images/img_google_map.png" alt="map" />
+          <M.Img src="./images/img_google_map.webp" alt="map" />
         </picture>
       </M.ArticleMap>
-    </section>
+    </>
   );
 };
 

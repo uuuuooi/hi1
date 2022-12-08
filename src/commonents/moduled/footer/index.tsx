@@ -41,7 +41,7 @@ const Footer = () => {
         <F.Aside2>
           <h1>
             <F.Picture>
-              <F.Img src="./images/img_footer_logo.png" alt="logo"></F.Img>
+              <F.Img src="./images/img_footer_logo.webp" alt="logo"></F.Img>
             </F.Picture>
           </h1>
         </F.Aside2>

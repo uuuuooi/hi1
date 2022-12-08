@@ -13,7 +13,7 @@ const Visual = () => {
     <section>
       <V.Article>
         <V.Picture>
-          <V.Img src="./images/img_bg_2.png" alt="bgi" />
+          <V.Img src="./images/img_bg_2.webp" alt="bgi" />
         </V.Picture>
         <Inner>
           <V.TextWrap>

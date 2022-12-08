@@ -17,7 +17,7 @@ export const Inner = styled.div`
   }
 `;
 
-export const VisualInner = styled.div`
+export const VisualInner = styled.section`
   width: 100%;
   max-width: 1340px;
   margin: 0 auto;

@@ -9,8 +9,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "S-CoreDream3";
 }
 
 a {
@@ -30,4 +29,8 @@ a {
     color: black;
     background: white;
   }
+}
+@font-face {
+  font-family: "S-CoreDream4";
+  src: url("/font/SCDream3.otf") format("woff");
 }

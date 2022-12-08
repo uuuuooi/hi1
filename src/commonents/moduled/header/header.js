@@ -27,7 +27,16 @@ const Header = () => {
     <M.Header className={`${show && "active"}`}>
       <M.Logo>
         <picture>
-          <img src="./images/logo.png" alt="HIONE" />
+          {show ? (
+            <img
+              src="./images/ico_hover_logo.webp"
+              alt="HIONE"
+              width={195}
+              height={28}
+            />
+          ) : (
+            <img src="./images/logo.webp" alt="HIONE" width={195} height={28} />
+          )}
         </picture>
       </M.Logo>
       <M.Nav>
@@ -50,11 +59,11 @@ const Header = () => {
         </M.NavUl>
       </M.Nav>
       <M.Translation>
-        <M.Button>
+        <M.Button className={`${show && "active"}`}>
           <span>KOR</span>
           <hr />
         </M.Button>
-        <M.Icon>
+        <M.Icon className={`${show && "active"}`}>
           <GiHamburgerMenu />
         </M.Icon>
       </M.Translation>
