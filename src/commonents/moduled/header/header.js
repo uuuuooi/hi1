@@ -10,7 +10,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useCallback, useEffect, useState } from "react";
 import { css } from "@emotion/css";
 
-const Header = () => {
+const Header = ({ testprops }) => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <M.Header className={`${show && "active"}`}>
+    <M.Header show={show}>
       <M.Logo>
         <picture>
           {show ? (

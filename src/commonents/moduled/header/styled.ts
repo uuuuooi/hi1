@@ -7,7 +7,7 @@
 */
 import styled from "@emotion/styled";
 
-const Header = styled.header`
+const Header = styled.header<{ testProps: boolean; show: boolean }>`
   width: 100%;
   position: fixed;
   display: flex;
@@ -16,9 +16,8 @@ const Header = styled.header`
   top: 0;
   z-index: 9;
   padding: 12px 120px 0px 0px;
-  &.active {
-    background-color: white;
-  }
+
+  background: ${(props) => (props.show ? "white" : "")};
 `;
 
 const Logo = styled.h1`
